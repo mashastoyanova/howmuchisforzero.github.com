@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">			
+    <title> HOW MUCH IS FOR ZERO ? </title>
+  
+	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700,600,300,200' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,600italic,700,300' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="style.css">
+
+   
+
+
+</head>
+
+
+<body class="news">
+
+
+	<header>
+	
+	<h1>HOW MUCH IS FOR ZERO?</h1>
+	<h2>net zero energy home experiment</h2>
+
+</header>
+
+ 
+    <div class="nav">
+      <ul>
+        <li class="home"><a href="#">Home</a></li>
+        <li class="tutorials"><a href="#">Seasons</a>
+          <ul>
+            <li><a href="#">Fall</a></li>
+            <li><a href="#">Winter</a></li>
+            <li><a href="#">Spring</a></li>
+            <li><a href="#">Summer</a></li>
+          </ul>
+        </li>
+        <li class="about"><a href="#">About</a></li>
+        <li class="news"><a href="#">Newsletter</a>
+          <ul>
+            <li><a href="#">News #1</a></li>
+            <li><a href="#">News #2</a></li>
+            <li><a href="#">News #3</a></li>
+          </ul>
+        </li>
+        <li class="contact"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    
+    <div id="content">
+	<p>This is a case study of a house in Virginia with solar panels and all thinkable insulation.</p>
+
+</div>
+
+
+<footer>
+OL2015
+</footer>
+
+
+</body>
+
+<style>
+
+ html {
+
+        background-color: rgb(255,255,255) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    
+   /* body {
+
+        font-family: 'Titillium Web';
+  		font-style: normal;
+  		font-weight: 200;
+		width: 99%;
+		margin: auto; /*auto*/
+		text-align: center; /*justify;*/
+		color: rgb(51,51,51); /*#572309;*/
+		background-color: rgb(255,255,255) ;
+		padding: 0px;
+		font-size: 20px;
+		/*position: center; /*relative?*/
+		/*border: solid 0px #71a291;*/
+		/*left: 4%;*/
+		overflow: auto;
+
+    }  */
+    
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(255,255,255);
+   font-family: 'Titillium Web';
+  
+}
+
+header {
+		width: device-width;
+		/*margin: -30px;*/
+		background-color: white;
+		height: 100px;
+		text-align: center; /*justify?*/
+		font-family: 'Titillium Web';
+ 		 font-style: normal;
+ 		 font-weight: 600;
+		text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+	 	/*border: solid 0px #ede5be;*/
+		/*font-weight: lighter;*/
+
+}
+
+h1 {
+
+    	color: rgb(0,170,145);
+		font-family:  'Titillium Web';
+		font-size: 20px;
+		text-align: center;
+		font-weight: lighter;
+		padding: 0px;
+		margin: 0px;
+		margin-top: 30px;
+
+	
+
+}
+
+
+
+h2 {
+
+        color: rgb(90,127,162) /*rgb(206,221,69)*/;
+		text-align: center;
+		font-size: 20px;
+		font-family: 'Titillium Web';
+		padding: 0px;
+		margin: 0px;
+		font-weight: lighter;
+
+}
+
+
+#content {
+
+		margin: 0 auto;
+		text-align: center;
+		padding: 0px;
+		margin-right: 0px;
+		
+		text-align: center;
+   		 display: flex;
+    	justify-content:center; 
+    	display: -webkit-flex; /* Safari */
+       -webkit-justify-content: center; /* Safari 6.1+ */
+       font-family: 'Titillium Web';
+  		font-style: normal;
+  		font-weight: 200;
+		width: 99%;
+		margin: auto; /*auto*/
+		text-align: center; /*justify;*/
+		color: rgb(51,51,51); /*#572309;*/
+		background-color: rgb(255,255,255) ;
+		padding: 0px;
+		font-size: 20px;
+		/*position: center; /*relative?*/
+		/*border: solid 0px #71a291;*/
+		/*left: 4%;*/
+		overflow: auto;
+
+
+}
+
+.nav ul {
+  list-style: none;
+  background-color: rgb(223,223,223) /* #444*/;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  font-family: 'Titillium Web';
+  font-size: 1.0em;
+  line-height: 40px;
+  text-align: center;
+  color: rgb(90,127,162);
+}
+
+.nav a {
+  text-decoration: none;
+  color: rgb(90,127,162);
+  display: block;
+  padding-left: 15px;
+  border-bottom: 1px solid #888;
+  transition: .3s background-color;
+}
+
+.nav a:hover {
+  background-color: rgb(206,221,69) /*#005f5f*/;
+}
+
+.nav a.active {
+  background-color: #aaa;
+  color: #444;
+  cursor: default;
+}
+
+/* Sub Menus */
+.nav li li {
+  font-size: .8em;
+}
+
+footer {
+	background: rgb(90,127,162);
+		width: 100%;
+		color: white;
+		text-align: center;
+		  font-family: 'Titillium Web';
+	}
+/*******************************************
+   Style menu for larger screens
+
+   Using 650px (130px each * 5 items), but ems
+   or other values could be used depending on other factors
+********************************************/
+
+@media screen and (min-width: 740px)  
+
+{
+header {
+	height: 150px;
+}
+h1 {
+	font-size: 40px;
+	
+				}
+				
+h2 {
+	font-size: 27px;
+	
+}
+
+
+
+  .nav li {
+    width: 130px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.0em;
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+  .nav a {
+    border-bottom: none;
+  }
+  
+.nav a:hover {
+  background-color: rgb(206,221,69) /*#005f5f*/;
+}
+  .nav > ul > li {
+    text-align: center;
+  }
+
+  .nav > ul > li > a {
+    padding-left: 0;
+  }
+
+  /* Sub Menus */
+  .nav li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+  }
+
+  .nav li:hover ul {
+    display: block;
+  }
+
+  .nav li ul li {
+    display: block;
+  }
+}
+
+</style>
+
+
+
+
+
+
