@@ -1,37 +1,5 @@
 
-<!DOCTYPE html>
 
-<html>
-
-<head>
-
-    <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">			
-    <title> HOW MUCH IS FOR ZERO ? </title>
-  
-	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700,600,300,200' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,600italic,700,300' rel='stylesheet' type='text/css'>
-
-	
-
-    <style>
-
-
-    /*
-
-
-
-    selector {
-
-        property: value;
-
-        property: value;
-
-    }
-
-
-
-    */
 
     html {
 
@@ -45,10 +13,101 @@
 
     }
 
-
-a:link {
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+ 
+/*----- Menu Outline -----*/
+.menu-wrap {
+    width:100%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+    background: rgb(90,127,162);
+}
+ 
+.menu {
+    width:1000px;
+    margin:0px auto;
+}
+ 
+.menu li {
+    margin:0px;
+    list-style:none;
+    font-family:'Titillium Web';
+}
+ 
+.menu a {
+    transition:all linear 0.15s;
+    color:#919191;
     text-decoration: none;
-    color: white;
+}
+ 
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:#be5b70;
+}
+ 
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+ 
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+ 
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+ 
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background: rgb(90,127,162);
+}
+ 
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+ 
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:rgb(90,127,162);
+}
+ 
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+ 
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+ 
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:rgb(90,127,162);
+}
+
+
+
+/*a:link {
+    text-decoration: none;
+    color: red;
 }
 
 a:visited {
@@ -64,7 +123,7 @@ a:active {
     text-decoration: underline;
 }
   
-
+*/
 
 body {
 
@@ -88,7 +147,7 @@ body {
 header {
 		width: device-width;
 		/*margin: -30px;*/
-		background-color: rgb(0,170,145);
+		background-color: white;
 		height: 250px;
 		text-align: center; /*justify?*/
 		font-family: 'Titillium Web';
@@ -125,7 +184,7 @@ header {
 
 h1 {
 
-    	color: white;
+    	color: rgb(0,170,145);
 		font-family:  'Titillium Web';
 		font-size: 80px;
 		text-align: center;
@@ -150,6 +209,14 @@ h2 {
 
 }
 
+/*ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute;
+}
+*/
+/*
 nav ul {
 
 		list-style: none;
@@ -157,17 +224,17 @@ nav ul {
 		text-align: center;
 		font-family:  'Titillium Web';
 		background-color: rgb(0,138,203);
-		font color: white;
+		font color: red;
 		margin: 0px;
 		padding-top: 10px;
         height: 60px;
         font-weight: bolder;
        
 }
+*/
 
 
-
-nav ul li  {
+/*nav ul li  {
 
 		display: inline;
 		/*margin-right: 5px;*/
@@ -175,7 +242,7 @@ nav ul li  {
 	
 }
 
-
+*/
 
 p {
 
@@ -203,6 +270,13 @@ footer {
 				text-align: left;
 		}
 		
+		ul {
+		position: static;
+		display: none;
+	}
+		li {
+		margin-bottom: 1px;
+	}
 		header {
 				font-weight: 600;
 				height: 150px;
@@ -232,7 +306,7 @@ footer {
 		#content	{
 			
    		 	display: flex;
-    		justify-content: space-around; 
+    		/*justify-content: space-around; */
     		display: -webkit-flex; /* Safari */
       		 -webkit-justify-content: space-around; /* Safari 6.1+ */
       		 }
@@ -244,6 +318,14 @@ footer {
 			overflow: scroll;
 			}
 			
+			ul {
+		position: static;
+		display: none;
+	}
+	
+	li {
+		margin-bottom: 1px;
+	}
 			
 		nav ul {
 			list-style: none;
@@ -266,45 +348,4 @@ footer {
 
 		
 		
-		
-    </style>
-
-
-
-</head>
-
-
-<body>
-
-	<header>
-	<br> </br>
-	<h1>HOW MUCH IS FOR ZERO?</h1>
-	<h2>net zero energy home experiment</h2>
-
-</header>
-
-
-
-<nav>
-
-	<ul>
-  		<li><a href="https://en.wikipedia.org/wiki/Solar_energy">fall</a></li>
-  		<li><a href="https://en.wikipedia.org/wiki/Wind_turbine">winter</a></li>
-    	<li><a href="http://mashastoyanova.github.com/finalproject.html">spring</a></li>
-    	<li><a href="http://mashastoyanova.github.com/finalproject.html">summer</a></li>
-	</ul>
-
-</nav>
-
-<div id="content">
-	<p>This is a case study of a house in Virginia with solar panels and all thinkable insulation. The latter done with the homeowner's bare hands.</p>
-
-</div>
-
-
-<footer>
-OL2015
-</footer>
-
-</body>
 
